@@ -1,0 +1,9 @@
+Placeholder for Draw.io architecture diagram:
+- Commercial environment
+- Controlled engineering enclave
+- CUI processing environment
+- Identity / MFA plane
+- Logging and monitoring plane
+- Key management / FIPS boundary
+- AI model hosting and inference zone
+- U.S.-only infrastructure boundary

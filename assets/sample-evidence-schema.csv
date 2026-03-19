@@ -1,0 +1,4 @@
+evidence_id,control_theme,evidence_name,source_system,classification,residency_tag,collection_frequency,owner,reviewer,retention_period,exception_path
+EVID-001,Identity,MFA Configuration,IdP Platform,Internal,US,weekly,IT Security,Compliance Lead,1 year,Security Manager
+EVID-002,Access Control,Approved Access List,Access Governance Tool,Restricted,US,weekly,IT Security,Compliance Lead,1 year,Security Manager
+EVID-003,Logging,Audit Log Coverage,SIEM,Restricted,US,daily,Security Engineering,Compliance Lead,1 year,Head of Security
