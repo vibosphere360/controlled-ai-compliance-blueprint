@@ -1,0 +1,69 @@
+TECHNOLOGY CONTROL PLAN (TCP)
+GRC Security Controls Inc.
+Version 1.0 – Draft for Discussion
+Prepared by: Victor Adeleke
+Organization: 
+Date: March 23, 2026
+Classification: Internal Use Only – For Security Controls Review
+
+Classification: Internal Use Only
+1. Purpose
+This Technology Control Plan establishes the procedures and controls required to protect export-controlled technology, technical data, software, and Controlled Unclassified Information (CUI) at AnySignal.
+It ensures compliance with the Export Administration Regulations (EAR), International Traffic in Arms Regulations (ITAR) where applicable, and DFARS/NIST 800-171 requirements for CUI while enabling rapid engineering velocity in RF, DSP, and satellite communications development.
+2. Scope
+This TCP applies to all Securitl personnel, contractors, visitors, and systems handling:
+AnyLink platform and adaptive waveform libraries
+DSP software and interference-mitigation algorithms
+RF/signal processing systems (waveforms, spectrum analysis)
+Satellite communications technical data and firmware
+Any CUI received under DoD or federal contracts
+Model weights, telemetry, and operational datasets (if classified as controlled)
+3. Controlled Technology & Classification
+All items are initially classified as EAR dual-use (primarily CCL Categories 3, 5, and 9).
+No confirmed ITAR-controlled items at this time (USML review completed).
+Future defense programs will trigger re-classification and potential ITAR controls.
+CUI marking and protection required for any federal contract data.
+4. System Boundary Model (Three-Zone Architecture)
+
+Controlled Zone (Restricted / High-Sensitivity)
+AI/DSP model weights, waveform libraries, CUI datasets, restricted repos, RF/signal processing systems, firmware/embedded software. Controls: US-person access where required • FIPS 140-3 validated cryptographic modules • Full audit logging & monitoring • No uncontrolled egress.
+Boundary Layer (Enforcement & Control Point)
+IAM/Authentication, RBAC & Policies, Approval Workflows, Logging & SIEM, Secure Data Transfer. Controls: Just-in-time / auditable access • All crossings logged • No uncontrolled bypass.
+General Engineering Zone (Day-to-Day Work)
+Dev/Test environments, internal collaboration tools, CI/CD pipelines, non-sensitive workflows. Controls: Enterprise IAM/MFA • No controlled data storage unless explicitly approved • Sanitized outputs only.
+5. Physical Security Controls
+Controlled Zone areas will be segregated (badged access, locked cabinets, visitor logs).
+Floorplans of Torrance and LA facilities attached as Appendix A (updated as needed).
+Controlled equipment labeled “Export Controlled / Restricted Use”.
+6. Information Technology & Data Controls
+Controlled data stored only in approved enclaves (e.g., AWS GovCloud or equivalent with FIPS encryption).
+No controlled data on personal devices or public clouds unless approved and encrypted.
+All transfers between zones require documented approval workflows and logging.
+HSM/PKI stack used for key management (multi-tenancy for commercial vs. federal partitions).
+7. Personnel & Access Controls
+Role-Based Access Control (RBAC) enforced.
+Foreign persons/visitors: screened and restricted from Controlled Zone unless licensed.
+Annual access reviews and training required for all personnel.
+8. Training & Awareness
+All employees receive initial and annual export compliance training.
+Specific TCP training for anyone accessing Controlled Zone.
+9. Auditing, Monitoring & Incident Response
+Quarterly TCP assessments and internal audits.
+Immediate reporting of any suspected violation to the Export Compliance Officer.
+Incident response plan includes containment, investigation, and voluntary disclosure if required.
+10. Export Licensing & Deemed Exports
+Deemed export reviews required before foreign-person access to technical data.
+License applications prepared and submitted as needed (BIS for EAR, DDTC for ITAR).
+End-user/end-use screening mandatory for all shipments and collaborations.
+11. Recordkeeping
+All TCP-related records retained for minimum 5 years.
+Electronic storage in approved secure repository.
+12. Review, Modification & Termination
+Annual recertification by Export Compliance Officer.
+Immediate update required for any changes (new tech, personnel, contracts, facility moves).
+Upon termination: controlled items/data disposition coordinated with Export Compliance Officer.
+Approval Signatures
+Export Compliance Officer / Consultant ________________________ Date ________
+Engineering Director ________________________ Date ________
+CEO / COO ________________________ Date ________
+Chief Information Security Officer ________________________ Date ________
