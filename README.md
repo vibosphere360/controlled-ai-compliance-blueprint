@@ -45,7 +45,7 @@ assets/
   sample-evidence-schema.csv
 Suggested use
 
-Share the executive memo with leadership interviewers
+Share the executive memo with leadership 
 
 Walk through the architecture diagram with engineering and security teams
 
